@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1>Weather App</h1>
+        <p>Get real-time weather updates for your location</p>
+      </header>
+      <main class="weather_section">
+        <div class="weather_card">
+          <div class="temp">
+            <h2 id="temperature">20°C</h2>
+          </div>
+          <div class="location_time">
+            <h3 id="location">Solapur</h3>
+            <p id="time">12:00 - Monday 11-12-2024</p>
+          </div>
+          <div class="condition">
+            <img
+              id="condition-icon"
+              src="https://cdn.weatherapi.com/weather/64x64/day/116.png"
+              alt="Condition"
+            />
+            <p id="condition">Mist</p>
+          </div>
+        </div>
+        <nav class="search_section">
+          <form id="searchForm">
+            <input
+              type="text"
+              name="city"
+              placeholder="Enter City Name"
+              class="search_area"
+              required
+            />
+            <button type="submit" class="search_button">Search</button>
+          </form>
+        </nav>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
